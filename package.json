@@ -1,8 +1,9 @@
 {
-  "name": "react",
+  "name": "stock-trading-client",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },

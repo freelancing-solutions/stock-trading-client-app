@@ -2,7 +2,7 @@ version: "2"
 services:
   client:
     build: .
-    image: mobiusdocket/client-app
+    image: mobiusdocker/client-app
     ports:
       - 3000:3000
     expose:

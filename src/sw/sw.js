@@ -28,6 +28,7 @@ let mem_store  ={
             response.forEach(cache_item => {
                 this.add_to_store(cache_item.url,cache_item.response).then(response => {
                     console.log("created new storage item ", response)
+                    // TODO- add mem
                 })
             })
         }).catch(error => {
@@ -74,7 +75,6 @@ self.addEventListener('install',  (event) => {
         } catch (e) {
             console.log('error caching urls', e.message);
         }
-
     })());
 });
 
@@ -95,10 +95,8 @@ self.addEventListener('activate', (event) => {
 });
 
 // Listening to fetch events to handle requests and Authorization
-
 // TODO- consider using the fetch event handler to dispatch messages back to the page triggering the events
 self.addEventListener('fetch', (event) => {
-
     // Checks if the request is included in our cache if yes returns the cached request
     let check_cache_hit = async event => {
         let matched_response = cache.match(event.request);
@@ -237,7 +235,6 @@ let messaging = {
                     let request = new Request('/return-visitor',init_get)
                     let response = await fetch(request)
                     process_request(request).then()
-
                 }break;
 
                 case "page-view":{

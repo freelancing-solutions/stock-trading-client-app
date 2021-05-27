@@ -2,9 +2,9 @@
  * Auth Context
  *
  */
-import {React, useContext, useEffect, useState} from "react";
+import React, {createContext, useEffect, useState} from "react";
 
-const AuthContext = useContext()
+const AuthContext = createContext()
 
 export default function AuthContextProvider(){
 

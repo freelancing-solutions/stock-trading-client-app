@@ -1,8 +1,6 @@
 /***
  * Initializing the application
  * firebase init
- * context initializations and loading data
- * initializing service workers and handlers
  */
 import React from "react"
 import firebase from "firebase"
@@ -20,22 +18,11 @@ const config = {
 try {
     let firebaseAPP = firebase.initializeApp(config)
 }catch(e){}
-//
-// if (!firebaseAPP.apps.length){
-//     console.log('in here')
-//     firebaseAPP.initializeApp(config);
-// }else{
-//     firebaseAPP.app()
-// }
 
 const uiConfig = {
     signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID
-
-        // firebaseAPP.GoogleAuthProvider.PROVIDER_ID,
-        // firebaseAPP.EmailAuthProvider.PROVIDER_ID,
-        // firebaseAPP.AnonymousAuthProvider.PROVIDER_ID
     ],
     tosUrl: '/terms',
     signInSuccessUrl: '/dashboard',

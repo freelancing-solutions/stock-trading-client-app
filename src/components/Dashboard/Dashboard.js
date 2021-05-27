@@ -1,8 +1,4 @@
-/****
- *
- * Client Dashboard
- *
- */
+/** Client Dashboard */
 import React from 'react'
 
 

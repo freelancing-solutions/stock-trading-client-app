@@ -4,8 +4,6 @@
  *
  */
 /*******************************************************************************/
-// Incrementing OFFLINE_VERSION will kick off the install event and force
-// previously cached resources to be updated from the network.
 
 const OFFLINE_VERSION = 1;
 const CACHE_NAME = 'pinoydesk-client';
@@ -17,9 +15,6 @@ const CACHE_URLS = ['/','/about','/contact','/dashboard'];
 // Global Variable to hold the value of the authorization token
 let auth_token = "";
 
-// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
-// by syncing to the app.js for access to storage options
-// NOTE: Learn how best to use this data store or remove it
 let mem_store  ={
     _cache_store : [],
     init : function(){

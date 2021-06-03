@@ -1,7 +1,9 @@
-/***
+/**
+ * Author https://github.com/freelancing-solutions Tweeter: @blueitserver
  * Initializing the application
  * firebase init
- */
+ **/
+
 import React from "react"
 import firebase from "firebase"
 

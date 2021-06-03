@@ -1,8 +1,8 @@
-import React, {useEffect} from "react"
-const firebase = require("firebase")
-const firebaseui = require("firebaseui")
-import {auth,uiConfig} from "../../init/auth/init"
+import React, { useEffect } from 'react'
+import { auth,uiConfig } from '../../init/auth/init'
 import 'firebaseui/dist/firebaseui.css'
+const firebase = require('firebase')
+const firebaseui = require('firebaseui')
 // TODO add custom css here
 
 export default function Auth(){

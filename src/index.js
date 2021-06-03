@@ -1,16 +1,9 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './components/Home/App';
 
-import App from './components/Home/App.js';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-
-//TODO open the following web apps,
-/***
- * FontFlipper
- * cloudcraft for budgeting
- * insomnia
- * flare
- * figma
- */
+ReactDOM.render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'));
